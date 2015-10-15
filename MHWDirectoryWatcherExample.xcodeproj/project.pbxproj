@@ -17,6 +17,10 @@
 		73859A68179D9EA700B54906 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 73859A67179D9EA700B54906 /* Default@2x.png */; };
 		73859A6A179D9EA700B54906 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 73859A69179D9EA700B54906 /* Default-568h@2x.png */; };
 		73859A73179D9F2500B54906 /* MHWDirectoryWatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 73859A72179D9F2500B54906 /* MHWDirectoryWatcher.m */; };
+		AAEF3C1B1BD0362F0000509E /* MHWDirectoryWatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 73859A72179D9F2500B54906 /* MHWDirectoryWatcher.m */; settings = {ASSET_TAGS = (); }; };
+		AAEF3C1E1BD0364C0000509E /* MHWDirectoryWatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 73859A72179D9F2500B54906 /* MHWDirectoryWatcher.m */; settings = {ASSET_TAGS = (); }; };
+		AAEF3C291BD0371F0000509E /* MHWDirectoryWatcher.h in Headers */ = {isa = PBXBuildFile; fileRef = 73859A71179D9F2500B54906 /* MHWDirectoryWatcher.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AAEF3C2A1BD037200000509E /* MHWDirectoryWatcher.h in Headers */ = {isa = PBXBuildFile; fileRef = 73859A71179D9F2500B54906 /* MHWDirectoryWatcher.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +39,10 @@
 		73859A69179D9EA700B54906 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		73859A71179D9F2500B54906 /* MHWDirectoryWatcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MHWDirectoryWatcher.h; sourceTree = "<group>"; };
 		73859A72179D9F2500B54906 /* MHWDirectoryWatcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MHWDirectoryWatcher.m; sourceTree = "<group>"; };
+		AAEF3C131BD036010000509E /* MHWDirectoryWatcher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MHWDirectoryWatcher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AAEF3C251BD0364C0000509E /* MHWDirectoryWatcher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MHWDirectoryWatcher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AAEF3C271BD036740000509E /* iOS-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iOS-Info.plist"; sourceTree = "<group>"; };
+		AAEF3C281BD036740000509E /* OSX-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "OSX-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +56,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		AAEF3C0F1BD036010000509E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AAEF3C1F1BD0364C0000509E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -56,6 +78,7 @@
 			children = (
 				73859A70179D9F2500B54906 /* MHWDirectoryWatcher */,
 				73859A59179D9EA700B54906 /* MHWDirectoryWatcherExample */,
+				AAEF3C141BD036010000509E /* MHWDirectoryWatcher */,
 				73859A52179D9EA700B54906 /* Frameworks */,
 				73859A51179D9EA700B54906 /* Products */,
 			);
@@ -65,6 +88,8 @@
 			isa = PBXGroup;
 			children = (
 				73859A50179D9EA700B54906 /* MHWDirectoryWatcherExample.app */,
+				AAEF3C131BD036010000509E /* MHWDirectoryWatcher.framework */,
+				AAEF3C251BD0364C0000509E /* MHWDirectoryWatcher.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -112,7 +137,35 @@
 			path = MHWDirectoryWatcher;
 			sourceTree = "<group>";
 		};
+		AAEF3C141BD036010000509E /* MHWDirectoryWatcher */ = {
+			isa = PBXGroup;
+			children = (
+				AAEF3C271BD036740000509E /* iOS-Info.plist */,
+				AAEF3C281BD036740000509E /* OSX-Info.plist */,
+			);
+			path = MHWDirectoryWatcher;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		AAEF3C101BD036010000509E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AAEF3C291BD0371F0000509E /* MHWDirectoryWatcher.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AAEF3C201BD0364C0000509E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AAEF3C2A1BD037200000509E /* MHWDirectoryWatcher.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		73859A4F179D9EA700B54906 /* MHWDirectoryWatcherExample */ = {
@@ -132,6 +185,42 @@
 			productReference = 73859A50179D9EA700B54906 /* MHWDirectoryWatcherExample.app */;
 			productType = "com.apple.product-type.application";
 		};
+		AAEF3C121BD036010000509E /* iOS Framework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AAEF3C1A1BD036010000509E /* Build configuration list for PBXNativeTarget "iOS Framework" */;
+			buildPhases = (
+				AAEF3C0E1BD036010000509E /* Sources */,
+				AAEF3C0F1BD036010000509E /* Frameworks */,
+				AAEF3C101BD036010000509E /* Headers */,
+				AAEF3C111BD036010000509E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "iOS Framework";
+			productName = MHWDirectoryWatcher;
+			productReference = AAEF3C131BD036010000509E /* MHWDirectoryWatcher.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		AAEF3C1C1BD0364C0000509E /* OS X Framework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AAEF3C221BD0364C0000509E /* Build configuration list for PBXNativeTarget "OS X Framework" */;
+			buildPhases = (
+				AAEF3C1D1BD0364C0000509E /* Sources */,
+				AAEF3C1F1BD0364C0000509E /* Frameworks */,
+				AAEF3C201BD0364C0000509E /* Headers */,
+				AAEF3C211BD0364C0000509E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "OS X Framework";
+			productName = MHWDirectoryWatcher;
+			productReference = AAEF3C251BD0364C0000509E /* MHWDirectoryWatcher.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -141,6 +230,11 @@
 				CLASSPREFIX = MHWDirectoryWatcher;
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = "Martin Hwasser";
+				TargetAttributes = {
+					AAEF3C121BD036010000509E = {
+						CreatedOnToolsVersion = 7.0.1;
+					};
+				};
 			};
 			buildConfigurationList = 73859A4B179D9EA700B54906 /* Build configuration list for PBXProject "MHWDirectoryWatcherExample" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -155,6 +249,8 @@
 			projectRoot = "";
 			targets = (
 				73859A4F179D9EA700B54906 /* MHWDirectoryWatcherExample */,
+				AAEF3C121BD036010000509E /* iOS Framework */,
+				AAEF3C1C1BD0364C0000509E /* OS X Framework */,
 			);
 		};
 /* End PBXProject section */
@@ -171,6 +267,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		AAEF3C111BD036010000509E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AAEF3C211BD0364C0000509E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -181,6 +291,22 @@
 				73859A60179D9EA700B54906 /* main.m in Sources */,
 				73859A64179D9EA700B54906 /* MHWDirectoryWatcherAppDelegate.m in Sources */,
 				73859A73179D9F2500B54906 /* MHWDirectoryWatcher.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AAEF3C0E1BD036010000509E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AAEF3C1B1BD0362F0000509E /* MHWDirectoryWatcher.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AAEF3C1D1BD0364C0000509E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AAEF3C1E1BD0364C0000509E /* MHWDirectoryWatcher.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,6 +351,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = MHWDirectoryWatcher;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -250,6 +377,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PRODUCT_NAME = MHWDirectoryWatcher;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -278,6 +406,144 @@
 			};
 			name = Release;
 		};
+		AAEF3C181BD036010000509E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = "$(SRCROOT)/MHWDirectoryWatcher/iOS-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hwaxxer.MHWDirectoryWatcher;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		AAEF3C191BD036010000509E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = "$(SRCROOT)/MHWDirectoryWatcher/iOS-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hwaxxer.MHWDirectoryWatcher;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		AAEF3C231BD0364C0000509E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = "$(SRCROOT)/MHWDirectoryWatcher/OSX-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hwaxxer.MHWDirectoryWatcher;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		AAEF3C241BD0364C0000509E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = "$(SRCROOT)/MHWDirectoryWatcher/OSX-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hwaxxer.MHWDirectoryWatcher;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -297,6 +563,24 @@
 				73859A6F179D9EA700B54906 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AAEF3C1A1BD036010000509E /* Build configuration list for PBXNativeTarget "iOS Framework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AAEF3C181BD036010000509E /* Debug */,
+				AAEF3C191BD036010000509E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		AAEF3C221BD0364C0000509E /* Build configuration list for PBXNativeTarget "OS X Framework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AAEF3C231BD0364C0000509E /* Debug */,
+				AAEF3C241BD0364C0000509E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
